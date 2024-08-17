@@ -1,0 +1,112 @@
+.top_bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space between the items */
+    height: fit-content;
+    object-position: center;
+}
+.logo{
+    display: inline-block;
+}
+.img_logo{
+    border-radius: 40px;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.logo_title{
+    font-family: "Wittgenstein";
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 50px;
+    color: #2170F3;
+    display: inline-block;
+    vertical-align: middle;
+}
+.button{
+    display: flex;
+    justify-content: space-between; /* Distributes space between the items */
+    align-items: center;
+}
+.buttons{
+    border: 0px;
+    font-size: 35px;
+    font-family: "Wittgenstein";
+    font-weight: bolder;
+    font-style: italic;
+    background-color: white;
+    margin-right: 100px;
+}
+.button_download{
+   font-size: 32px;
+   font-family: "Wittgenstein";
+   font-weight: bold;
+   background-color: #2170F3;
+   color:white;
+   border: none;
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   border-radius: 100px;
+   object-position: center;
+    cursor:pointer;
+}
+.what_is{
+    background-color: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Distributes space between the items */
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+
+}
+
+.title{
+    font-family: "Wittgenstein";
+    font-weight: bolder;
+    font-style: italic;
+    font-size:100px;
+    color: #2187f3;
+    display: inline-block;
+    vertical-align: middle;
+    display: inline-block;
+    width: 1200px;
+    margin-bottom: 30px;
+}
+.descrip{
+    margin-right: 100px;
+    font-family: "Wittgenstein";
+    font-weight: normal;
+    font-style: italic;
+    font-size:70px;
+    display: block;
+    width: 1400px;
+    margin-bottom: 50px;
+}
+.download{
+    font-size: 40px;
+    font-family: "Wittgenstein";
+    font-weight: bold;
+    background-color: #2170F3;
+    color:white;
+    border: none;
+    width: 430px;
+    height:90px;
+    border-radius: 100px;
+    object-position: center;
+     cursor:pointer;
+}
+.what_is_video{
+    display: flex;
+    justify-content: center; /* Distributes space between the items */
+    object-position: center;
+}
+.video_1{
+    width: 80%;
+}
+
+
