@@ -1,6 +1,19 @@
+
+a{
+    color: black;
+}
 body{
     margin: 0;
 }
+.top_bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
 .logo {
     display: inline-block;
     padding-left: 20px;
@@ -23,9 +36,12 @@ body{
 }
 
 .button {
-    margin-left: 800px;
     display: inline-block;
     padding-right: 20px;
+}
+.buttons:hover{
+    text-decoration: underline;
+    color: #2170F3;
 }
 
 .buttons {
@@ -36,6 +52,7 @@ body{
     font-style: italic;
     background-color: white;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .button_download {
@@ -52,26 +69,29 @@ body{
 
 .what_is {
     background-color: #f8f8f8;
-    display: block;
-    padding: 20px 30px;
-    object-position: center;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
 }
 
 .know_more {
     background-color: #f8f8f8;
-    display: block;
-    padding: 10px;
-    padding-left: 400px;
-}
-
-.know_more_text {
-    margin: 0;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    text-align: center;
     font-family: "Wittgenstein";
     font-weight: bolder;
     font-style: italic;
-    font-size: 40px;
+    font-size: 30px;
     color: #2187f3;
+
 }
+
+
 
 .what_is_text {
     width: 500px; /* Adjusted to fit alongside the video */
@@ -87,8 +107,6 @@ body{
     color: #2187f3;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: 20px;
-
 }
 
 .descrip {
@@ -105,6 +123,7 @@ body{
     background-color: #2170F3;
     color: white;
     border: none;
+    margin-top: 2px;
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
@@ -112,23 +131,21 @@ body{
 
 .what_is_video {
     display: inline-block;
-    object-fit: contain;
-    object-position: center;
-    padding-left: 200px;
 }
 .video_1{
-    width: 600px;
+    height: 300px;
 }
+
 .stunning_video{
     display: inline-block;
-    object-fit: contain;
-    object-position: center;
-    padding-right: 200px;
 }
 .stunning{
-    display: block;
-    padding: 20px 30px;
-    object-position: center; 
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
 }
 .stunning_text{
     width: 500px; /* Adjusted to fit alongside the video */
@@ -143,19 +160,107 @@ body{
 }
 .div_image{
  display: inline-block;
- margin-left: 300px;
+
 }
 .div_image2{
     display: inline-block;
-    margin-left: 30px;
-    margin-right: 500px;
    }
 .image{
     height: 300px;
 }
 .more{
-    display: inline-block;
-    padding-left: 200px;
-    padding-right: 200px;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
     text-align: center;
+    font-family: "Wittgenstein";
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    color: #2187f3;
 }
+/* Footer Styles */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    font-family: "Wittgenstein";
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-middle .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-middle .footer-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-middle .footer-links a:hover {
+    color: #2187f3;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons .social-icon {
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons .social-icon:hover {
+    color: #2187f3;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-middle .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
