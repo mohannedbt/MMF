@@ -2,11 +2,13 @@
 <html>
     <head>
         <title>The MMF project</title>
+        <link rel="icon" href="logo_icon.png">
         <link rel="stylesheet" href="index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet:wght@100..400&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <div class="top_bar">
             <div class="logo">
@@ -14,32 +16,49 @@
                <p class="logo_title">L.M.F</p>
             </div>
             <div class="button">
-                <button class="buttons">What is MMF</button>
-                <button class="buttons">fonctionalities</button>
-                <button class="buttons">more info</button>
+                <button class="buttons" id="scroll-button" >What is MMF</button>
+                <button class="buttons" id="scroll-button2">fonctionalities</button>
+                <button class="buttons " id="scroll-button3">more info</button>
                 <button class="button_download">Coming soon :&#41;</button>
             </div>
         </div>
-        <div class="what_is">
+        <script>
+document.getElementById('scroll-button').addEventListener('click', function() {
+    document.getElementById('what_is').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+document.getElementById('scroll-button2').addEventListener('click', function() {
+    document.getElementById('stunning').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+document.getElementById('scroll-button3').addEventListener('click', function() {
+    document.getElementById('more').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+        </script>
+        <div class="what_is" id="what_is">
             <div class="what_is_text">
                 <div class="title">
                     MMF: where the limit between  Maths and fun is equal to zero
                 </div>
                 <div class="descrip">
-                    <p>MMF is an <span class="super">android app </span> is combining beautiful animations math videos and quizz in order to <span class="super">make learning maths a fun experience</span></p>
+                    MMF is an <span class="super">android app </span> is combining beautiful animations math videos and quizz in order to <span class="super">make learning maths a fun experience</span></p>
                 </div>
                 <div class="download_div">
                     <button class="download">Coming soon  :&#41; </button>
                 </div>
             </div>
             <div class="what_is_video">
-                <video controls src="join.mp4" class="video_1"></video>
+                <video  controls src="join.mp4" class="video_1"></video>
             </div>
         </div>
         <div class="know_more">
-            <p class="know_more_text">learn more about our fonctionalities</p>
+           learn more about our fonctionalities
         </div>
-        <div class="stunning">
+        <div class="stunning" id="stunning">
             <div class="stunning_video">
                 <video controls src="graph.mp4" class="video_1"></video>
             </div>
@@ -77,9 +96,31 @@
                 </div>
             </div>
         </div>
-        <div class="more" >
-            <p class="know_more_text">for more info on the app developpement
-                consult our social media :&#41;</p>
+        <div class="more" id="more">
+            for more info on the app developpement
+                consult our social media :&#41;
         </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>L.M.F</h3>
+                    <p>&copy; 2024 L.M.F. All rights reserved.</p>
+                </div>
+                <div class="footer-middle">
+                    <ul class="footer-links">
+                        <li><a href="#">what is MMF</a></li>
+                        <li><a href="#">fonctionalities</a></li>
+                        <li><a href="#">more info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <p>Follow us:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61564552623821&is_tour_dismissed" class="social-icon">facebook</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </body>
 </html>
